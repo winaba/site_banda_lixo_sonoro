@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banda Lixo Sonoro | Movimento & Música Periférica</title>
+    <style>
+        :root {
+            --bg-dark: #0f0f0f;
+            --bg-card: #1a1a1a;
+            --accent: #e63946;
+            --accent-hover: #ff4d5a;
+            --text-main: #f4f4f4;
+            --text-muted: #b0b0b0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho / Hero */
+        header {
+            background: linear-gradient(180deg, rgba(230, 57, 70, 0.2) 0%, var(--bg-dark) 100%);
+            padding: 5rem 1.5rem 3rem;
+            text-align: center;
+            border-bottom: 1px solid #262626;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            max-width: 650px;
+            margin: 0 auto 2rem;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Botões de Redes */
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.8rem;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: var(--text-main);
+            background-color: var(--bg-card);
+            border: 1px solid #333;
+            padding: 0.7rem 1.4rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            border-color: var(--accent);
+            background-color: var(--accent);
+            color: #fff;
+        }
+
+        /* Container Principal */
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        /* Cards e Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .card h3 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Lista de Faixas */
+        .tracklist {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .tracklist li {
+            padding: 0.6rem 0;
+            border-bottom: 1px solid #262626;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+        }
+
+        .tracklist li span {
+            color: var(--accent);
+            font-weight: bold;
+            margin-right: 0.8rem;
+        }
+
+        /* Destaque Memorial */
+        .memorial {
+            background: linear-gradient(135deg, #1f1617 0%, #1a1a1a 100%);
+            border: 1px solid #3d2224;
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        /* Aviso de Ciclo */
+        .status-box {
+            background-color: #161616;
+            border-left: 4px solid #f4a261;
+            padding: 1.2rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+            color: var(--text-muted);
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            border-top: 1px solid #262626;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="tag">Guarulhos • Pimentas • Desde 2016</span>
+        <h1>Lixo Sonoro</h1>
+        <p>Mais do que uma banda, um movimento experimental com identidade brasileira e periférica que traduz o próprio fluxo da vida.</p>
+        
+        <div class="social-links">
+            <a href="https://open.spotify.com/intl-pt/artist/3XGzbe6WIpz6SYV79lXu8a" target="_blank" class="btn">Spotify</a>
+            <a href="https://www.youtube.com/c/BandaLixoSonoro" target="_blank" class="btn">YouTube</a>
+            <a href="https://www.instagram.com/lixosonoro/" target="_blank" class="btn">Instagram</a>
+            <a href="https://www.facebook.com/bandalixosonoro/" target="_blank" class="btn">Facebook</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sobre -->
+        <section id="sobre">
+            <h2>O Movimento</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Origens na Periferia</h3>
+                    <p>Surgida em 2016 no Bairro dos Pimentas, em Guarulhos (SP), a Lixo Sonoro nasceu com a vontade de criar algo novo, autêntico e carregado de peculiaridades brasileiras e periféricas.</p>
+                </div>
+                <div class="card">
+                    <h3>Som Experimental</h3>
+                    <p>Sem se prender a rótulos rígidos, a banda mistura referências urbanas, crítica social e vivências do cotidiano, transformando cada encontro e apresentação em uma experiência coletiva.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discografia -->
+        <section id="musica">
+            <h2>Álbum: A Vida É Um Experimento (2025)</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Ouça Agora</h3>
+                    <p style="margin-bottom: 1rem;">Confira o álbum completo com 11 faixas autorais direto no player oficial:</p>
+                    <iframe style="border-radius:12px" src="https://spotify.com" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+
+                <div class="card">
+                    <h3>Faixas do Disco</h3>
+                    <ul class="tracklist">
+                        <li><div><span>01</span> A Vida É um Experimento</div></li>
+                        <li><div><span>02</span> Paranóia</div></li>
+                        <li><div><span>03</span> Eu Não Sei</div></li>
+                        <li><div><span>04</span> Fogo Na Mata</div></li>
+                        <li><div><span>05</span> Bregaço</div></li>
+                        <li><div><span>06</span> Com Você</div></li>
+                        <li><div><span>07</span> Sede de Voar</div></li>
+                        <li><div><span>08</span> Pega a Visão</div></li>
+                        <li><div><span>09</span> Zen</div></li>
+                        <li><div><span>10</span> A Noite Inteira</div></li>
+                        <li><div><span>11</span> Viva a Periferia</div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legado / Homenagem -->
+        <section id="legado">
+            <h2>Memória e Legado</h2>
+            <div class="memorial">
+                <h3 style="color: var(--accent); margin-bottom: 0.6rem;">"Fogo na Mata" — Em memória de Higor Andrade</h3>
+                <p style="color: var(--text-main); margin-bottom: 0.8rem;">
+                    Existem músicas que são mais do que músicas: são memória, mensagem e legado. <strong>"Fogo na Mata"</strong> é um grito de alerta contra a destruição da natureza, a exploração da Amazônia e a ganância que coloca o lucro acima da vida.
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">
+                    Escrita por <strong>Higor Andrade</strong> (que nos deixou em 2025), a faixa permanece viva como símbolo de sua arte, sua voz e sua mensagem para as próximas gerações.
+                </p>
+            </div>
+        </section>
+
+        <!-- Fase Atual -->
+        <section id="fase">
+            <h2>Novo Ciclo</h2>
+            <div class="status-box">
+                <p><strong>Pausa nos palcos, movimento contínuo:</strong> Após anos de estrada itinerante, a Lixo Sonoro anunciou uma pausa nos shows ao vivo para iniciar um novo ciclo criativo — aberto a novas possibilidades, experimentações e formas de fazer arte.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Banda Lixo Sonoro — Guarulhos, SP. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
